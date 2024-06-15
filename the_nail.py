@@ -14,15 +14,11 @@ Then, if l <= 0 after your hit, you win the contest and pass the kata.
 me = [1, 2, 3]
 them = [2, 3, 4]
 
+"""
+opp(5) -> win
+opp(9) -> win
+"""
+
 
 def hit(l):
-    rem = l
-
-    if rem > 8:
-        strength = 3
-    elif rem > 5:
-        strength = rem - 5
-    else:
-        strength = rem
-
-    return strength
+    return l % 5
